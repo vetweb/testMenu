@@ -1,0 +1,34 @@
+@import "./vars/fonts";
+@import "./vars/colors";
+@import "./mixins/media";
+
+@mixin default-font() {
+  font-family: $font_content, sans-serif;
+}
+
+@mixin default-font-style() {
+  @include default_font;
+  font-size: $content_size;
+  color: $c_content_color;
+}
+
+@mixin header-font() {
+  font-family: $font_header, sans-serif;
+}
+
+@mixin title-base() {
+  margin: 0;
+  font: {
+    weight: $fw_normal;
+  }
+  color: $c_content_color;
+}
+
+// Example
+// @include myfont(36px, bold, red);
+@mixin myfont($size, $lh) {
+  font: {
+    size: $size;
+  }
+  line-height: $lh;
+}

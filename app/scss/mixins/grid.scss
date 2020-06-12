@@ -1,0 +1,29 @@
+@mixin row($space) {
+  @include flex(row, flex-start, stretch, wrap);
+  margin-left: -1 * $space / 2;
+  margin-right: -1 * $space / 2;
+}
+
+@mixin col($space) {
+  padding-left: $space / 2;
+  padding-right: $space / 2;
+}
+
+@mixin flex($direction, $justify, $align, $wrap:nowrap){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin flex-center-h-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-center-h{
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,43 @@
+@import "./vars/sizes";
+
+@mixin xs{
+  @media screen and (min-width: #{$xs_width}) {
+    @content;
+  }
+}
+
+@mixin cxs{
+  @media screen and (min-width: #{$csx_width}) {
+    @content;
+  }
+}
+
+@mixin sm{
+  @media screen and (min-width: #{$sm_width}) {
+    @content;
+  }
+}
+
+@mixin md{
+  @media screen and (min-width: #{$md_width}) {
+    @content;
+  }
+}
+
+@mixin lg{
+  @media screen and (min-width: #{$lg_width}) {
+    @content;
+  }
+}
+
+@mixin lg_plus{
+  @media screen and (min-width: #{$lg_width + 1}) {
+    @content;
+  }
+}
+
+@mixin xl{
+  @media screen and (min-width: #{$xl_width}) {
+    @content;
+  }
+}

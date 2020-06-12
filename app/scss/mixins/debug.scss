@@ -1,0 +1,13 @@
+@import "./vars/properties";
+
+@mixin debugBgLight($color:rgb(128 + random(127), 128 + random(127), 128 + random(127))){
+  @if $useDebug {
+    background-color: $color;
+  }
+}
+
+@mixin debugBgDark($color:rgb(random(127), random(127), random(127))){
+  @if $useDebug {
+    background-color: $color;
+  }
+}

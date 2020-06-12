@@ -1,0 +1,17 @@
+.icon {
+  @include transition(transform 0.2s ease);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include iconSvgProp();
+
+  &_logo {
+    display: block;
+    @include size(70%);
+    background-image: url('#{$iconPath}i-logo.png');
+
+    @include lg {
+      @include size(100%);
+    }
+  }
+}

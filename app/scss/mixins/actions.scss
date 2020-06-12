@@ -1,0 +1,39 @@
+/* transition
+   Example: @include transition(translate 0.3s ease-in, background);
+*/
+
+@mixin transition($transitions...) {
+  $unfoldedTransitions: ();
+  @each $transition in $transitions {
+    $unfoldedTransitions: append($unfoldedTransitions, ($transition), comma);
+  }
+
+  -webkit-transition: $unfoldedTransitions;
+  transition: $unfoldedTransitions;
+}
+
+// size to one line
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// Style with ampersand use
+@mixin specificity {
+  &#{&} {
+    @content;
+  }
+}
+
+@mixin iconSvgProp  {
+  position: relative;
+  display: inline-flex;
+  align-self: center;
+  top: .125em;
+
+  svg {
+    @include size(1em);
+    fill: currentColor;
+  }
+}
+

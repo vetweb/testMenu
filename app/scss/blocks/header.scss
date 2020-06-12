@@ -1,0 +1,18 @@
+.header {
+  flex: 0 0 auto;
+  @include debugBgDark();
+  position: relative;
+
+  &_navigation {
+    @include flex(row, space-between, center);
+  }
+
+  &__logo {
+    @include size(54px, 40px);
+  }
+
+  @include lg {
+    padding: 40px 0;
+  }
+
+}

@@ -1,0 +1,19 @@
+.root-promo {
+  position: relative;
+  padding: 50px 0;
+  height: 500px;
+  background: url('#{$imgPath}bg-header.png') no-repeat center;
+  background-size: cover;
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_info {
+    max-width: 710px;
+    text-align: center;
+  }
+}

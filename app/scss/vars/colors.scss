@@ -1,0 +1,27 @@
+$sc_white: #ffffff;
+$sc_black: #000000;
+$sc_gray: #333333;
+$sc_gray_light: #f5f6f7;
+$c_brown: #aa9b77;
+$c_brown_dark: #7A6C55;
+$c_dark_gray: #424242;
+// ---
+
+$c_bg_main: $sc_white;
+$c_content_color: $sc_gray;
+
+// Button
+$c_bg_button: $c_brown;
+$c_bg_button_hover: $c_brown_dark;
+$c_content_button: $sc_white;
+$c_content_button_hover: $sc_white;
+
+$c_border_card: $c_brown;
+$c_checkbox: $c_brown;
+$c_checkbox_bg: $sc_white;
+
+$sc_bg_section: $sc_gray_light;
+
+$c_card_name: $c_brown;
+$c_card_price: $c_dark_gray;
+
